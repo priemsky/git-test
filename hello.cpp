@@ -1,10 +1,10 @@
 #include "HelloWorld.hpp"
+#include <memory>
 
 int main()
 {
-	IGreeter *l_greeter = new HelloWorld();
+	std::unique_ptr<IGreeter> l_greeter = std::make_unique<HelloWorld>();
 	l_greeter->greet();
 	
-	delete l_greeter;
 	return 0;
 }
