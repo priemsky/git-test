@@ -1,7 +1,10 @@
-#include <iostream>
+#include "HelloWorld.hpp"
 
 int main()
 {
-	std::cout << "Hello, everyone!" << endl;
+	IGreeter *l_greeter = new HelloWorld();
+	l_greeter->greet();
+	
+	delete l_greeter;
 	return 0;
 }
