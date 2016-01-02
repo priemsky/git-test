@@ -3,5 +3,5 @@
 
 void HelloWorld::greet() const
 {
-	std::cout << "Hello, World!\n";
+	std::cout << "Hello, cruel world!\n";
 }
